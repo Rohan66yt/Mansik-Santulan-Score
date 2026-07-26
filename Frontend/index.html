@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mental Health Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Mental Health Predictor</h1>
+
+<form id="predictForm">
+
+<input type="number" id="age" placeholder="Age" required>
+
+<input type="text" id="country" placeholder="Country" required>
+
+<select id="gender">
+<option>Male</option>
+<option>Female</option>
+</select>
+
+<select id="academic_level">
+<option>Undergraduate</option>
+<option>Graduate</option>
+<option>High School</option>
+</select>
+
+<select id="most_used_platform">
+<option>Instagram</option>
+<option>Facebook</option>
+<option>YouTube</option>
+<option>LinkedIn</option>
+<option>WhatsApp</option>
+</select>
+
+<select id="purpose_of_use">
+<option>Education</option>
+<option>Entertainment</option>
+<option>Networking</option>
+<option>News</option>
+</select>
+
+<input type="number" id="avg_daily_usage_hours"
+placeholder="Daily Usage Hours">
+
+<input type="number" id="daily_unlocks"
+placeholder="Daily Unlocks">
+
+<input type="number" id="study_hours"
+placeholder="Study Hours">
+
+<input type="number"
+id="physical_activity_hours"
+placeholder="Physical Activity Hours">
+
+<input type="number"
+id="sleep_hours_per_night"
+placeholder="Sleep Hours">
+
+<select id="stress_level">
+<option>Low</option>
+<option>Medium</option>
+<option>High</option>
+<option>Very High</option>
+</select>
+
+<button type="submit">
+Predict Score
+</button>
+
+</form>
+
+<div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
