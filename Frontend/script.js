@@ -43,7 +43,7 @@ try{
 
 const response = await fetch(
 
-"https://mansik-santulan-score-of6t.onrender.com",
+"http://127.0.0.1:8000/predict",
 
 {
 
