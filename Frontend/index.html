@@ -2,13 +2,25 @@
 <html>
 <head>
     <title>Mental Health Predictor</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="container">
 
-<h1>Mental Health Predictor</h1>
+    <h1>Mental Health Predictor</h1>
+    <p class="subtitle">
+        Predict your mental wellness score using lifestyle
+        and social media usage patterns.
+    </p>
 
 <form id="predictForm">
 
@@ -42,13 +54,16 @@
 <option>News</option>
 </select>
 
-<input type="number" id="avg_daily_usage_hours"
+<input type="number"
+id="avg_daily_usage_hours"
 placeholder="Daily Usage Hours">
 
-<input type="number" id="daily_unlocks"
+<input type="number"
+id="daily_unlocks"
 placeholder="Daily Unlocks">
 
-<input type="number" id="study_hours"
+<input type="number"
+id="study_hours"
 placeholder="Study Hours">
 
 <input type="number"
@@ -67,12 +82,30 @@ placeholder="Sleep Hours">
 </select>
 
 <button type="submit">
-Predict Score
+Predict Mental Health Score
 </button>
 
 </form>
 
 <div id="result"></div>
+
+</div>
+
+<!-- Result Modal -->
+
+<div class="modal" id="resultModal">
+
+    <div class="modal-content">
+
+        <span class="close-btn" id="closeModal">
+            &times;
+        </span>
+
+        <h2>Your Mental Health Score</h2>
+
+        <div id="modalResult"></div>
+
+    </div>
 
 </div>
 
