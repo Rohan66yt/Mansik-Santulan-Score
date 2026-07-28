@@ -117,21 +117,21 @@ form.addEventListener("submit", async (e) => {
 
         // Score Based Message
 
-        if (score >= 80) {
+        if (score >= 8) {
 
             message =
                 "Excellent mental wellness! Keep up your healthy habits.";
 
         }
 
-        else if (score >= 60) {
+        else if (score >= 6) {
 
             message =
                 "Good mental wellness. You're maintaining a healthy lifestyle.";
 
         }
 
-        else if (score >= 40) {
+        else if (score >= 4) {
 
             message =
                 "Your mental wellness is average. Small improvements can make a big difference.";
